@@ -5,12 +5,11 @@ function Home(){
   const[searchQuery, setSearchQuery] = useState(""); // state, fcn
 
   const movies =[
-    {id: 1, title:"时光代理人", release_date: "2021"},
+    {id: 1, title:"代理人", release_date: "2021"},
     {id: 2, title:"时光代理人 第二季", release_date: "2023"},
     {id: 3, title:"时光代理人 英都篇", release_date: "2024"},
     {id: 4, title:"时光代理人 第三季", release_date: "2026"},
   ];
-
 
   const handleSearch = () => {
     e.preventDefault();
