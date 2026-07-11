@@ -1,5 +1,6 @@
 import Moviecard from "../components/Moviecard"
 import {useState} from "react"
+import "../css/Home.css"
 
 function Home(){
   const[searchQuery, setSearchQuery] = useState(""); // state, fcn
@@ -11,7 +12,7 @@ function Home(){
     {id: 4, title:"时光代理人 第三季", release_date: "2026"},
   ];
 
-  const handleSearch = () => {
+  const handleSearch = (e) => {
     e.preventDefault();
     alert(searchQuery);
 

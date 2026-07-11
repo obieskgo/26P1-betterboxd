@@ -1,24 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
-import Moviecard from "./components/Moviecard.jsx"
-import Home from "./pages/Home.jsx"
+
+import './css/App.css';
+import Home from "./pages/Home";
+import Favorite from "./pages/Favs";
+import {Routes, Route, Link} from "react-router-dom";
+import Navbar from "./components/Navbar";
 
 function App() {
-  
   return (
-    <Home />
-  );
-}
-
-function Text({jamal}){
-  return(
     <div>
-      <p>{jamal}</p>
-    </div>
+      <Navbar />
+      <main className="main-content">
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/favorites" element={<Favorite />}/>
+      </Routes>
+    </main>
+  </div>
   );
 }
 
-export default App
+export default App;

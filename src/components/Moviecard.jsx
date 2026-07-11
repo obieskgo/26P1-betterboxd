@@ -1,3 +1,4 @@
+import "../css/Moviecard.css"
 export function Moviecard({movie}){
   
   function onFavClick(){
