@@ -16,7 +16,7 @@ function Home(){
         setMovies(popularMovies)
       } catch(err){
         console.log(err)
-        setError("Failed to load movies. Please try again later.")
+        setError("Failed to load the movies. Please try again later.")
       }finally{
         setLoading(false)
       }
@@ -63,7 +63,7 @@ function Home(){
 
       {error && <div className="error-message">{error}</div>}
 
-      {loading ?(<div className="loading">Loadingeu .....</div>
+      {loading ?(<div className="loading">Searching.....</div>
       ):(
         <div className="movies-grid">
           {movies?.map(movie => 
